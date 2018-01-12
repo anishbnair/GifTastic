@@ -14,3 +14,8 @@ html {
 button {
     margin-right: 20px;
 }
+
+.col-lg-9 {
+    display: flex;
+    flex-wrap: wrap;
+}
