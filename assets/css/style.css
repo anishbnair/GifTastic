@@ -10,3 +10,7 @@ html {
     font-size: 50px;
     color: sienna;
 }
+
+button {
+    margin-right: 20px;
+}
