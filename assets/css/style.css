@@ -1,4 +1,10 @@
-.header {
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.card-header {
     text-align: center; 
     font-family: fantasy;
     font-size: 50px;
