@@ -48,6 +48,28 @@ function displayGifs() {
     })
 }
 
+// Click event function when user add new legend
+$("#addLegend").on("click", function (event) {
+    $("#displayGifs").empty();
+    event.preventDefault();
+
+    var newLegendName = $("#userInput").val().trim();
+    var duplicateLegend = jQuery.inArray(newLegendName, legendList);
+
+    // Button won't be created for empty and duplicate inputs
+    if (newLegendName === "") {
+        return;
+    } else if (duplicateLegend !== -1) {
+        $("#userInput").val("");
+        return;
+    } else {
+        legendList.push(newLegendName);
+        $("#userInput").val("");
+        // Call renderButtons function
+        renderButtons();
+    }
+})
+
 // Call DiplayGifs function when user click on legend name button
 $(document).on("click", ".legendButton", displayGifs);
 
