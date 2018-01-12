@@ -15,39 +15,50 @@
 
 <body>
 
-
-    <div id="container">
-        <div class="row">
-            <div class="col">
-                <div class="header">Sports Legends</div>
+    <div class="container-fluid">
+        <div class="card text-center">
+            <div class="card-header">
+                Sports Legends
+            </div>
+            <div class="card-body">
+                <!-- <h5 class="card-title">Please click on button to display gif images</h5> -->
+                <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                <!-- <div class="renderedButtons"> -->
+                    <!-- Rendered buttons will go here.-->
+                <!-- </div> -->
+                <div id="legendButtons">
+                    <!-- Rendered buttons will go here.-->
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
         </div>
-
         <div class="row">
-            <div class="col">
-                <div id="legendButtons"> </div>
+            <div class="col-lg-9" id="displayGifs">
+                <!-- <div class="card"> -->
+                <!-- <div class="card-body"> -->
+                <!-- Giphs will be displaye here -->
+
+                <!-- </div> -->
+                <!-- </div> -->
             </div>
-        </div>
+            <div class="col-md-3" id="select-giph">
+                <!-- <div class="card"> -->
+                <!-- <div class="card-body"> -->
+                <form>
+                    <div class="form-group">
+                        <label for="userInput">Please enter your favourite Sports Legend</label>
+                        <input type="text" class="form-control" id="userInput" placeholder="Enter name">
+                        <!-- <input type="text" class="form-control" id="userInput"> -->
+                    </div>
 
-        <div class="row">
-            <div class="col-md-3 well" id="select-giph">
-                <form id="giph-form" class="form-group pull-right">
-                    <label for="inputName">Add a Sports Legend</label>
-                    <br>
-                    <input type="text" id="InputName">
                 </form>
-                <!-- Button triggers new animal to be added -->
-                <button id="addLegend" type="submit" class="btn btn-default btn-lg">Submit</button>
-            </div>
+                <button type="submit" class="btn btn-primary" id="addLegend">Submit</button>
 
-            <div class="col-md-9 well" id="displayGiphs">
-                <!-- This is where the giphs will go.-->
+                <!-- </div> -->
+                <!-- </div> -->
             </div>
         </div>
     </div>
-
-
-
 
     <!-- Linking JQuery Library -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
