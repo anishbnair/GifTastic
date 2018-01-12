@@ -1,7 +1,7 @@
 
 
 // Array to hold legend names
-var legendList = ["Federer", "Messi", "Kobe", "Ronaldo"];
+var legendList = ["Federer", "Messi", "Michael Jordan", "Sachin Tendulkar"];
 
 // Functton to render buttons as per list of items in the array
 function renderButtons() {
